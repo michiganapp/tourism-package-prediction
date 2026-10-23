@@ -1,0 +1,23 @@
+artifact_path: /Users/raj/apps/dr/projects/Tourism Package Prediction/mlruns/1/models/m-6090ea5e86eb40c78eb7174867cb18f7/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.14
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.1
+    skops_trusted_types: null
+mlflow_version: 3.17.2
+model_id: m-6090ea5e86eb40c78eb7174867cb18f7
+model_size_bytes: 482516
+model_uuid: m-6090ea5e86eb40c78eb7174867cb18f7
+prompts: null
+run_id: 5953034f1d0344b78b07b23b852310fb
+utc_time_created: '2026-10-23 02:09:08.933346'
