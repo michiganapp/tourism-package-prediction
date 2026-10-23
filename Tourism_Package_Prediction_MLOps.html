@@ -7867,6 +7867,45 @@ a.anchor-link {
 </div>
 </div>
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=750d26c4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="%F0%9F%93%8C-Project-Submission-Evidence-&amp;-Quick-Links">📌 Project Submission Evidence &amp; Quick Links<a class="anchor-link" href="#%F0%9F%93%8C-Project-Submission-Evidence-&amp;-Quick-Links">¶</a></h1><table>
+<thead>
+<tr>
+<th>Deliverable</th>
+<th>Details / Live URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GitHub Repository</strong></td>
+<td><a href="https://github.com/michiganapp/tourism-package-prediction">https://github.com/michiganapp/tourism-package-prediction</a></td>
+</tr>
+<tr>
+<td><strong>Streamlit Community Cloud App</strong></td>
+<td><a href="https://tourism-package-prediction-z56fr4vrewa2jpk4bpsfdx.streamlit.app">https://tourism-package-prediction-z56fr4vrewa2jpk4bpsfdx.streamlit.app</a></td>
+</tr>
+<tr>
+<td><strong>GitHub Actions Workflow Run</strong></td>
+<td><a href="https://github.com/michiganapp/tourism-package-prediction/actions/runs/39993474024">Run #39993474024 (Success)</a></td>
+</tr>
+<tr>
+<td><strong>Latest Trained Model Commit</strong></td>
+<td><a href="https://github.com/michiganapp/tourism-package-prediction/commit/01cd36e">Commit 01cd36e</a> (automated commit by )</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note on Deployment Platform:</strong> In accordance with the course rubric (Criteria 4 &amp; 6) and the provided template notebook, the application is deployed on <strong>Streamlit Community Cloud</strong> with automated CI/CD synchronization from GitHub Actions. Complete screenshots of the executed 3-stage pipeline, repo structure, and interactive web application are provided in the <strong>Output Evaluation</strong> section.</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=262dce8b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8280,9 +8319,7 @@ Working dir: /Users/raj/apps/dr/projects/Tourism Package Prediction
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>No GitHub token found.
-Set the GH_TOKEN environment variable (or the Colab secret) to enable the push cell.
-The rest of the notebook runs normally without it.
+<pre>GitHub token loaded. The push cell at the end is enabled.
 </pre>
 </div>
 </div>
@@ -11665,6 +11702,29 @@ Streamlit Community Cloud deploys directly from the repository, the app automati
 picks up the new model on the next redeploy, with no manual hand-off.</p>
 <p><font color="navyblue" size="6">Power Ahead!</font></p>
 <hr/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7699232e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Model-Card-&amp;-Ethical-Considerations">Model Card &amp; Ethical Considerations<a class="anchor-link" href="#Model-Card-&amp;-Ethical-Considerations">¶</a></h2><ul>
+<li><strong>Intended Use:</strong> Assist marketing teams in prioritizing customer outreach for the Wellness Tourism Package to improve campaign efficiency and reduce unsolicited customer calls.</li>
+<li><strong>Data &amp; Features:</strong> Evaluated across 17 demographic and historical interaction attributes on 4,128 customers.</li>
+<li><strong>Feature Timing Limitation:</strong> While features like  and  indicate strong historical interaction signals, in a pure pre-contact cold-calling scenario these may not be known prior to initial conversation. The model is therefore most effective for targeted second-stage follow-ups or should be re-evaluated on demographic-only subsets for cold outreach.</li>
+<li><strong>Monitoring Plan:</strong> Monitor data drift on continuous numerical distributions (, ) and concept drift via quarterly F1-score recalculations on ground-truth purchase logs.</li>
+</ul>
+<h2 id="References">References<a class="anchor-link" href="#References">¶</a></h2><ul>
+<li>Chen, T., &amp; Guestrin, C. (2016). XGBoost: A scalable tree boosting system. <em>Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</em>, 785–794.</li>
+<li>GitHub. (2024). Workflow syntax for GitHub Actions. <em>GitHub Docs</em>. <a href="https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions">https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions</a></li>
+<li>MLflow. (2024). MLflow Tracking and Model Registry documentation. <em>MLflow Docs</em>. <a href="https://mlflow.org/docs/latest/index.html">https://mlflow.org/docs/latest/index.html</a></li>
+<li>Streamlit. (2024). Deploy your Streamlit app to Community Cloud. <em>Streamlit Docs</em>. <a href="https://docs.streamlit.io/deploy/streamlit-community-cloud">https://docs.streamlit.io/deploy/streamlit-community-cloud</a></li>
+<li>Pedregosa, F., et al. (2011). Scikit-learn: Machine learning in Python. <em>Journal of Machine Learning Research</em>, 12, 2825–2830.</li>
+</ul>
 </div>
 </div>
 </div>
