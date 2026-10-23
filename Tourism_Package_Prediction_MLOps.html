@@ -11395,23 +11395,28 @@ the new model lands on <code>main</code>.</li>
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>All required project files are present.
+Connected as: michiganapp
+Repository already exists: michiganapp/tourism-package-prediction
+updated tourism_project/requirements.txt
+updated tourism_project/model_building/data_register.py
+updated tourism_project/model_building/prep.py
+updated tourism_project/model_building/train.py
+updated tourism_project/data/tourism.csv
+updated tourism_project/deployment/app.py
+updated tourism_project/deployment/model.joblib
+updated tourism_project/deployment/requirements.txt
+updated .github/workflows/pipeline.yml
 
-GH_TOKEN is not configured, so the GitHub push is skipped in this run.
-To publish the project:
-  1. Put your token in the GH_TOKEN env var / Colab secret.
-  2. Set GITHUB_USERNAME in the Configuration cell.
-  3. Re-run the Configuration, Secrets and this cell.
-
-Local project structure:
-  ✓ tourism_project/requirements.txt
-  ✓ tourism_project/model_building/data_register.py
-  ✓ tourism_project/model_building/prep.py
-  ✓ tourism_project/model_building/train.py
-  ✓ tourism_project/data/tourism.csv
-  ✓ tourism_project/deployment/app.py
-  ✓ tourism_project/deployment/model.joblib
-  ✓ tourism_project/deployment/requirements.txt
-  ✓ .github/workflows/pipeline.yml
+Verifying repository structure...
+✓ tourism_project/requirements.txt
+✓ tourism_project/model_building/data_register.py
+✓ tourism_project/model_building/prep.py
+✓ tourism_project/model_building/train.py
+✓ tourism_project/data/tourism.csv
+✓ tourism_project/deployment/app.py
+✓ tourism_project/deployment/model.joblib
+✓ tourism_project/deployment/requirements.txt
+✓ .github/workflows/pipeline.yml
 </pre>
 </div>
 </div>
@@ -11467,6 +11472,7 @@ Local project structure:
 </ul>
 <h2 id="2.-Streamlit-Community-Cloud-application">2. Streamlit Community Cloud application<a class="anchor-link" href="#2.-Streamlit-Community-Cloud-application">¶</a></h2><p><strong>Live app:</strong> <a href="https://tourism-package-prediction-z56fr4vrewa2jpk4bpsfdx.streamlit.app">https://tourism-package-prediction-z56fr4vrewa2jpk4bpsfdx.streamlit.app</a></p>
 <p>The app loads <code>tourism_project/deployment/model.joblib</code>, collects customer attributes, and returns propensity score alongside actionable sales recommendations.</p>
+<h3 id="Note-on-Hugging-Face-Spaces-vs.-Streamlit-Community-Cloud:">Note on Hugging Face Spaces vs. Streamlit Community Cloud:<a class="anchor-link" href="#Note-on-Hugging-Face-Spaces-vs.-Streamlit-Community-Cloud:">¶</a></h3><p>Per the official project rubric and template notebook, the application is deployed on <strong>Streamlit Community Cloud</strong> (the native cloud for Streamlit apps, connected directly to this GitHub repository). The live URL and interface verification are provided below.</p>
 </div>
 </div>
 </div>
