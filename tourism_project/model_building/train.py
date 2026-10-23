@@ -84,28 +84,6 @@ def main():
     print(f"Categorical features ({len(categorical_features)}): {categorical_features}")
 
     mlflow.set_tracking_uri(f"sqlite:///{ROOT / 'mlflow.db'}")
-    client = mlflow.tracking.MlflowClient()
-    exp = client.get_experiment_by_name(EXPERIMENT)
-    if exp is None:
-        client.create_experiment(
-            EXPERIMENT,
-            artifact_location=(ROOT / "mlruns" / "1").as_uri(),
-        )
-    else:
-        # Ensure artifact location is local to repo root, not hardcoded to another machine
-        expected_artifact_uri = (ROOT / "mlruns" / exp.experiment_id).as_uri()
-        if exp.artifact_location != expected_artifact_uri:
-            try:
-                import sqlite3
-                conn = sqlite3.connect(ROOT / "mlflow.db")
-                conn.execute(
-                    "UPDATE experiments SET artifact_location = ? WHERE experiment_id = ?",
-                    (expected_artifact_uri, exp.experiment_id),
-                )
-                conn.commit()
-                conn.close()
-            except Exception:
-                pass
     mlflow.set_experiment(EXPERIMENT)
 
     candidates = {
